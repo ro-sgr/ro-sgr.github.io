@@ -1,0 +1,33 @@
+a#link1 {
+  box-shadow: inset 0 0 0 0 #54b3d6;
+  color: #54b3d6;
+  margin: 0 -.10rem;
+  padding: 0 .10rem;
+  transition: color .3s ease-in-out, box-shadow .3s ease-in-out;
+  text-decoration: none;
+}
+a:hover#link1 {
+  box-shadow: inset 100px 0 0 0 #54b3d6;
+  color: white;
+}
+
+#link2 {
+  box-shadow: inset 0 0 0 0 #e2d451;
+  color: #e2d451;
+  margin: 0 -.25rem;
+  padding: 0 .25rem;
+  transition: color .3s ease-in-out, box-shadow .3s ease-in-out;
+  text-decoration: none;
+}
+
+a#link3 {
+  box-shadow: inset 150px 0 0 0 #36393a;
+  color: #60c4e9;
+  margin: 0 -.10rem;
+  padding: 0 .10rem;
+  transition: color .3s ease-in-out, box-shadow .3s ease-in-out;
+  text-decoration: none;
+}
+a:hover#link3 {
+  color: white;
+}

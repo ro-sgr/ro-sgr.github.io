@@ -1,0 +1,121 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>RSM</title>
+    <meta name="description" content="RSM Portfolio.">
+    <meta name="author" content="SitePoint">
+
+    <meta property="og:title" content="RSM Portfolio.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.ro-sgr.github.io/">
+    <meta property="og:description" content="Rodrigo Segura Moreno's web portfolio.">
+
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon-16x16.png">
+    <link rel="apple-touch-icon" type="image/png" sizes="180x180" href="img/favicon/apple-touch-icon.png">
+
+    <!-- Fontawesome -->
+    <script src="https://kit.fontawesome.com/96c796fd6a.js" crossorigin="anonymous"></script>
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/mainStyle.css">
+    <link rel="stylesheet" href="css/index.css">
+
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Waiting+for+the+Sunrise" rel="stylesheet" type="text/css"/>
+</head>
+
+<body class="d-flex h-100 text-center text-white bg-dark">
+    
+    <div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
+      <header class="mb-auto">
+        <div>
+          <h3 class="float-md-start mb-0">ρ</h3>
+          <nav class="nav nav-masthead justify-content-center float-md-end">
+            <a class="nav-link fw-bold py-1 px-0 active" aria-current="page" href="#"><i class="fa-solid fa-house"></i></a>
+            <a class="nav-link fw-bold py-1 px-0" href="common/projects.html">projects</a>
+            <a class="nav-link fw-bold py-1 px-0" href="common/about.html">about</a>
+          </nav>
+        </div>
+      </header>
+      <br>
+      <main class="px-3">
+        <h1><div id="typedtext"></div></h1>
+        <p>Physics student • Python coder • Quantum Computing & Data Science enthusiast</p>
+        <br>
+        <p class="lead"><strong>¡Bienvenidx!</strong></p>
+        <p class="lead">
+          I'm a bachelor student of
+          <a id="link1" target="_blank" href="https://www.fciencias.unam.mx/estudiar-en-ciencias/estudios/licenciaturas/fisica">Physics</a>
+          at 6th semestre from the <span id="link2">National Autonomous University of Mexico (UNAM)</span>.
+          From a mathematical perspective, my carrer path is mainly focused on Geometry and Topology; the physical side of it
+          is enclined towards Quantum Theory and Quantum Computing.
+        </p>
+        <p class="lead">Currently, I'm also enrolled at the <a id="link3" href="https://www.qubitbyqubit.org/">QubitxQubit</a> initiative.</p>
+        <p class="lead">
+          Getting lost in nature is a recurrent activity I pursue 🏞... any plan that involves hiking or camping, I'm in.
+        </p>
+        <br>
+        <p class="lead">
+          <span class="btn btn-sm btn-secondary fw-bold border-white bg-white">ro.sgr [at] ciencias.unam.mx</span>
+        </p>
+      </main>
+
+      <hr>
+
+      <footer class="mt-auto text-white-50">
+        <a href="https://github.com/ro-sgr" target="_blank" class="fs-2 text-white"><i class="fa-brands fa-github"></i></a>&nbsp;&nbsp;&nbsp;
+        <a href="https://www.linkedin.com/in/rodrigo-segura-moreno/" target="_blank" class="fs-2 text-white"><i class="fa-brands fa-linkedin"></i></a>
+      </footer>
+
+    </div>
+    
+</body>
+
+<script>
+    // TypeWritter credits: https://codepen.io/gavra/pen/nNRvKX
+
+    // set up text to print, each item in array is new line
+    var aText = new Array("Rodrigo Segura Moreno");
+    var iSpeed = 100; // time delay of print out
+    var iIndex = 0; // start printing array at this posision
+    var iArrLength = aText[0].length; // the length of the text array
+    var iScrollAt = 20; // start scrolling up at this many lines
+    
+    var iTextPos = 0; // initialise text position
+    var sContents = ''; // initialise contents variable
+    var iRow; // initialise current row
+    
+    function typewriter(){
+        sContents =  ' ';
+        iRow = Math.max(0, iIndex-iScrollAt);
+        var destination = document.getElementById("typedtext");
+    
+        while ( iRow < iIndex ) {
+            sContents += aText[iRow++] + '<br />';
+        }
+        destination.innerHTML = sContents + aText[iIndex].substring(0, iTextPos) + "_";
+        if ( iTextPos++ == iArrLength ) {
+            iTextPos = 0;
+            iIndex++;
+            if ( iIndex != aText.length ) {
+                iArrLength = aText[iIndex].length;
+                setTimeout("typewriter()", 500);
+            }
+        } else {
+            setTimeout("typewriter()", iSpeed);
+        }
+    }
+
+    typewriter();
+</script>
+
+</html>
