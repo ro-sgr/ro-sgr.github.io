@@ -64,114 +64,65 @@
       <br>
 
       <div class="row">
-        <div class="col-6">
-            <div class="row mt-auto mb-3">
-                <div><h4>Formation <i class="fa-solid fa-school"></i></h4></div>
+        <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+            <li class="nav-item" role="presentation">
+              <button class="nav-link active" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home" aria-selected="true"><i class="fa-solid fa-school"></i> Academic background</button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button class="nav-link" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile" type="button" role="tab" aria-controls="pills-profile" aria-selected="false"><i class="fa-solid fa-chalkboard-user"></i> Summer schools</button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button class="nav-link" id="pills-contact-tab" data-bs-toggle="pill" data-bs-target="#pills-contact" type="button" role="tab" aria-controls="pills-contact" aria-selected="false">Certificates</button>
+            </li>
+          </ul>
+          <div class="tab-content" id="pills-tabContent">
+            <!-- Formation -->
+            <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
+                <div class="pb-0 text-start"><strong>Bachelor Degree on Physics</strong> (2020 - 2024)</div>
+                <div class="pb-0 text-start">Facultad de Ciencias, Universidad Nacional Autónoma de México</div>
             </div>
-            <div class="row mt-auto">
-                <div class="col-12 text-center">
-                    <div class="d-flex justify-content-center">
-                        <div class="card text-white bg-secondary" style="width: 28rem;">
-                            <div class="card-header p-3">
-                                <div><strong>Bachelor Degree on Physics</strong></div>
-                            </div>
-                            <div class="card-body">
-                                <div class="pb-0">Universidad Nacional Autónoma de México</div>
-                                <div class="pb-0">Facultad de Ciencias</div>
-                                <div class="pb-0">(2020 - 2024)</div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="col-6">
-            <div class="row mt-auto mb-3">
-                <h4>Courses <i class="fa-solid fa-chalkboard-user"></i></h4>
-            </div>
-            <div class="row mt-auto mb-3">
-                <div class="col-12 text-center">
-                    <div class="d-flex justify-content-center">
-                        <div class="card text-white bg-dark" style="width: 28rem;">
-                            <div class="card-header bg-secondary">
-                                <div><strong>Global Quantum Program 2023</strong></div>
-                            </div>
-                            <div class="card-body">
-                                <div class="pb-0"><a id="link3" target="_blank" href="https://www.womanium.org/Quantum/Computing">Womanium</a></div>
-                                <div class="pb-0">(july 2023 - sep 2023)</div>
-                            </div>
-                            <div class="card-footer">
-                                <a class="text-white" target="_blank" href="https://drive.google.com/file/d/1_hIfywn9bql-2mOxSyEsromTH8FGF8_l/view?usp=sharing"><i class="fa-solid fa-link"></i></a>&nbsp;
+            <!-- Summer schools -->
+            <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
+                <div class="pb-0 text-start"><strong>Global Quantum Program 2023</strong> (july 2023 - sep 2023)</div>
+                <div class="pb-0 text-start"><a id="link3" target="_blank" href="https://www.womanium.org/Quantum/Computing">Womanium</a></div>
+                <div class="pb-0 text-start">
+                    <a class="text-white" target="_blank" href="https://drive.google.com/file/d/1_hIfywn9bql-2mOxSyEsromTH8FGF8_l/view?usp=sharing"><i class="fa-solid fa-link"></i></a>&nbsp;
                                 Global Quantum Scholarship
-                            </div>
-                        </div>
-                    </div>
                 </div>
-            </div>
-            <div class="row mt-auto mb-3">
-                <div class="col-12 text-center">
-                    <div class="d-flex justify-content-center">
-                        <div class="card text-white bg-dark" style="width: 28rem;">
-                            <div class="card-header bg-secondary">
-                                <div><strong>Quantum Winter School</strong></div>
-                                <div>with Microsoft Azure Quantum</div>
-                            </div>
-                            <div class="card-body">
-                                <div class="pb-0"><a id="link3" target="_blank" href="https://www.qubitbyqubit.org/winter-school">Qubit by Qubit</a> by The Coding School</div>
-                                <div class="pb-0">(feb 2023)</div>
-                            </div>
-                            <div class="card-footer">
-                                <a class="text-white" target="_blank" href="https://verified.sertifier.com/en/verify/42515966274702/"><i class="fa-solid fa-link"></i></a>&nbsp;
+                
+                <br>
+
+                <div class="pb-0 text-start"><strong>Quantum Winter School with Microsoft Azure Quantum</strong> (feb 2023)</div>
+                <div class="pb-0 text-start"><a id="link3" target="_blank" href="https://www.qubitbyqubit.org/winter-school">Qubit by Qubit</a> by The Coding School</div>
+                <div class="pb-0 text-start">
+                    <a class="text-white" target="_blank" href="https://verified.sertifier.com/en/verify/42515966274702/"><i class="fa-solid fa-link"></i></a>&nbsp;
                                 Certificate
-                            </div>
-                        </div>
-                    </div>
                 </div>
-            </div>
-            <div class="row mt-auto mb-3">
-                <div class="col-12 text-center">
-                    <div class="d-flex justify-content-center">
-                        <div class="card text-white bg-dark" style="width: 28rem;">
-                            <div class="card-header bg-secondary">
-                                <div><strong>Introduction to Quantum Computing</strong></div>
-                                <div>with IBM Quantum</div>
-                            </div>
-                            <div class="card-body">
-                                <div class="pb-0"><a id="link3" target="_blank" href="https://www.qubitbyqubit.org/course-info">Qubit by Qubit</a> by The Coding School</div>
-                                <div class="pb-0">(sep 2022 - apr 2023)</div>
-                            </div>
-                            <div class="card-footer">
-                                <a class="text-white" target="_blank" href="https://verified.sertifier.com/en/verify/77407487975038"><i class="fa-solid fa-link"></i></a>&nbsp;
+
+                <br>
+
+                <div class="pb-0 text-start"><strong>Introduction to Quantum Computing with IBM Quantum</strong> (sep 2022 - apr 2023)</div>
+                <div class="pb-0 text-start"><a id="link3" target="_blank" href="https://www.qubitbyqubit.org/course-info">Qubit by Qubit</a> by The Coding School</div>
+                <div class="pb-0 text-start">
+                    <a class="text-white" target="_blank" href="https://verified.sertifier.com/en/verify/77407487975038"><i class="fa-solid fa-link"></i></a>&nbsp;
                                 Certificate
-                            </div>
-                        </div>
-                    </div>
                 </div>
-            </div>
-            <div class="row mt-auto mb-3">
-                <div class="col-12 text-center">
-                    <div class="d-flex justify-content-center">
-                        <div class="card text-white bg-dark" style="width: 28rem;">
-                            <div class="card-header bg-secondary">
-                                <div><strong>Qiskit Global Summer School 2022</strong></div>
-                            </div>
-                            <div class="card-body">
-                                <div class="pb-0"><a id="link3" target="_blank" href="https://qiskit.org/learn/summer-school/quantum-simulation-summer-school-2022/">IBM</a></div>
-                                <div class="pb-0">(aug 2022)</div>
-                            </div>
-                            <div class="card-footer">
-                                <a class="text-white" target="_blank" href="https://www.credly.com/badges/9a5ede5d-e297-4d1f-b71e-8acd7e724294"><i class="fa-solid fa-link"></i></a>&nbsp;
+
+                <br>
+
+                <div class="pb-0 text-start"><strong>Qiskit Global Summer School 2022</strong> (aug 2022)</div>
+                <div class="pb-0 text-start"><a id="link3" target="_blank" href="https://qiskit.org/learn/summer-school/quantum-simulation-summer-school-2022/">IBM</a></div>
+                <div class="pb-0 text-start">
+                    <a class="text-white" target="_blank" href="https://www.credly.com/badges/9a5ede5d-e297-4d1f-b71e-8acd7e724294"><i class="fa-solid fa-link"></i></a>&nbsp;
                                 Certificate (Quantum Excellence)
-                            </div>
-                        </div>
-                    </div>
                 </div>
             </div>
-            <hr>
-            <div class="mb-3"><a class="text-white" id="link1" href="">All courses</a></div>
-            <hr>
-        </div>
-      </div>      
+            <!-- Certificates -->
+            <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab">
+                [...]
+            </div>
+          </div>
+      </div>
 
       <hr>
 
